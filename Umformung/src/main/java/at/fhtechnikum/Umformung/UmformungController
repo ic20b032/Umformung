@@ -1,7 +1,13 @@
 package at.fhtechnikum.Umformung;
-
+@RestController
 public class UmformungController {
+    @GetMapping(localhost:8080"/umf/{in}")
+    public double InchToCentimeter(@PathVariable double in) {
+        return in * 2.54;
+    }
 
-    public int
-
+    @GetMapping(localhost:8080"/umf/{yd}")
+    public double YardToMeter(@PathVariable double yd) {
+        return yd / 1.094;
+    }
 }
