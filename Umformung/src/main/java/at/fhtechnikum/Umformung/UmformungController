@@ -1,4 +1,9 @@
 package at.fhtechnikum.Umformung;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.PathVariable;
+
 @RestController
 public class UmformungController {
     @GetMapping(localhost:8080"/umf/{in}")
